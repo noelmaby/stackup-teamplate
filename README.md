@@ -12,11 +12,11 @@ phazor
 1. Explaining the working of project
 2. Embed video of project demo
 ## Libraries used
-nodejs - 16.17.0
-express js - 4.18.2
-handlebars - 7.1.2
-mongodb - 6.2.0
-mongoose - 8.0.0
+nodejs - 16.17.0 <br>
+express js - 4.18.2 <br>
+handlebars - 7.1.2 <br>
+mongodb - 6.2.0 <br>
+mongoose - 8.0.0 <br>
 
 ## How to configure
 Instructions for setting up project
