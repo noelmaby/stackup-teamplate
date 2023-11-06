@@ -9,7 +9,7 @@ phazor
 ## Link to product walkthrough
 [link to video]
 ## How it Works ?
-1. Explaining the working of project
+1. Explaining the working of project <br>
 2. Embed video of project demo
 ## Libraries used
 nodejs - 16.17.0 <br>
@@ -21,7 +21,7 @@ mongoose - 8.0.0 <br>
 ## How to configure
 Instructions for setting up project
 ## How to Run
-Clone the repository
-npm install
-npm start
-site at "localhost:3000"
+Clone the repository <br>
+npm install <br>
+npm start <br>
+site at "localhost:3000" <br>
