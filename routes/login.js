@@ -15,7 +15,7 @@ router.get('/signup',(req,res)=>{
 
 router.post('/signup',async (req, res) => {
   try {
-    const newItem = new user({
+    const newItem = new User({
       name: req.body.Name,
       email: req.body.Email,
     });
@@ -24,6 +24,7 @@ router.post('/signup',async (req, res) => {
 
     const savedItem = await newItem.save();
     console.log(savedItem)
+    res.redirect('/')
   } catch (error) {
     console.log(error);
   }
