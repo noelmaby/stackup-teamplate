@@ -3,9 +3,9 @@ var router = express.Router();
 const User = require('../helpers/signup-helpers');
 const bcrypt = require('bcrypt');
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
+
   res.render('mainpage/login');
 });
 
@@ -44,6 +44,8 @@ router.post('/login',async(req,res)=>{
       if (isPasswordValid){
         console.log('user and password correct')
         res.redirect('/user')
+        req.session.loggedIn=true;
+        req.session.user=user;
       }
 
     else if (!isPasswordValid) {
@@ -63,7 +65,14 @@ router.post('/login',async(req,res)=>{
   }
 });
 
-router.get('/user', function(req, res, next) {
+router.get('/user', function(req, res, next){
+  if (req.session.loggedIn) {
+    const user = User;
+    // Assuming your user model has a 'name' property
+    const userName = user.name;
+   console.log("Welcome"+userName);
+  }
+  console.log("Welcome"+userName);
   res.render('user/user');
 });
 
