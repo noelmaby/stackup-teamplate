@@ -1,4 +1,4 @@
-![StackUp Banner]([https://tinkerhub.frappe.cloud/files/stackup%20banner.jpeg])
+ ![stackup banner](https://github.com/noelmaby/stackup-teamplate/assets/108945793/d21c5a36-f5ed-45fe-8385-979cae539465)
 ![PHONEPEAK Logo - croped](https://github.com/noelmaby/stackup-teamplate/assets/108945793/f224cc76-76c1-4832-a626-76ec6888461a)
 
 # PhonePeak Store - E-Commerce Website
