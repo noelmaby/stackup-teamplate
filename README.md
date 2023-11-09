@@ -1,4 +1,6 @@
 ![StackUp Banner]([https://tinkerhub.frappe.cloud/files/stackup%20banner.jpeg])
+![PHONEPEAK Logo - croped](https://github.com/noelmaby/stackup-teamplate/assets/108945793/f224cc76-76c1-4832-a626-76ec6888461a)
+
 # PhonePeak Store - E-Commerce Website
 Phone Peak Store is an innovative eCommerce platform dedicated to enhancing your mobile shopping experience. With a wide array of the latest smartphones, accessories, and cutting-edge gadgets, we've crafted a user-friendly environment where tech enthusiasts can explore, compare, and purchase with ease. Our user and admin login functionalities ensure security and convenience, while the platform's robust foundation, powered by Node.js and MongoDB, guarantees swift, reliable, and secure transactions. Adding to the seamless experience, our intuitive "Add to Cart" feature simplifies product management, making your journey from selection to checkout a breeze. At Phone Peak Store, we're committed to delivering a modern, secure, and user-centric approach to mobile eCommerce, and we look forward to sharing this exciting journey with you
 ## Team members
