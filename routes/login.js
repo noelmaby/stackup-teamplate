@@ -69,8 +69,9 @@ router.post('/login',async(req,res)=>{
 /*user page */
 router.get('/user', function(req, res, next){
 
-  res.render('user/user',{admin:false});
+  res.render('user/user',{signupage:true});
 });
+
 
 
 
