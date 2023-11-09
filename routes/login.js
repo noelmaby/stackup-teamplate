@@ -3,16 +3,17 @@ var router = express.Router();
 const User = require('../helpers/signup-helpers');
 const bcrypt = require('bcrypt');
 
-/* GET home page. */
+/* login page */
 router.get('/', function(req, res, next) {
 
-  res.render('mainpage/login');
+  res.render('mainpage/login',{signupage:true});
 });
 
 router.get('/signup',(req,res)=>{
-  res.render('mainpage/signup')
+  res.render('mainpage/signup',{signupage:true})
 })
 
+/* sign up page check */
 router.post('/signup',async (req, res) => {
   try {
     const newItem = new User({
@@ -30,7 +31,7 @@ router.post('/signup',async (req, res) => {
   }
 });
 
-
+/*login page check */
 router.post('/login',async(req,res)=>{
   const { email, password } = req.body;
 
@@ -65,15 +66,10 @@ router.post('/login',async(req,res)=>{
   }
 });
 
+/*user page */
 router.get('/user', function(req, res, next){
-  if (req.session.loggedIn) {
-    const user = User;
-    // Assuming your user model has a 'name' property
-    const userName = user.name;
-   console.log("Welcome"+userName);
-  }
-  console.log("Welcome"+userName);
-  res.render('user/user');
+
+  res.render('user/user',{admin:false});
 });
 
 
