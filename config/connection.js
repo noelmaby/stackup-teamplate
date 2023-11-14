@@ -1,2 +1,2 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/ecommerce');
+mongoose.connect('mongodb+srv://noelmanjayilaby:XUCaOuIE8KAljuKz@cluster0.5qouqxg.mongodb.net/productdatabase?retryWrites=true&w=majority');
