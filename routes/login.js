@@ -45,8 +45,7 @@ router.post('/login',async(req,res)=>{
       if (isPasswordValid){
         console.log('user and password correct')
         res.redirect('/user')
-        req.session.loggedIn=true;
-        req.session.user=user;
+       
       }
 
     else if (!isPasswordValid) {
