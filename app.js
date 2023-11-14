@@ -6,9 +6,10 @@ var logger = require('morgan');
 var hbs=require('express-handlebars');
 
 var loginRouter = require('./routes/login');
-var usersRouter = require('./routes/users');
+var adminRouter = require('./routes/admin');
 
 var app = express();
+var fileUpload=require('express-fileupload');
 var db=require('./config/connection');
 
 var session=require('express-session');
@@ -25,9 +26,9 @@ app.use(cookieParser());
 app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({secret:"key",cookie:{maxAge:600000}}))
-
+app.use(fileUpload);
 app.use('/', loginRouter);
-app.use('/users', usersRouter);
+app.use('/admin', adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

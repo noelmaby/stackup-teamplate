@@ -68,8 +68,7 @@ router.post('/login',async(req,res)=>{
 
 /*user page */
 router.get('/user', function(req, res, next){
-
-  res.render('user/user',{signupage:true});
+  res.render('user/user',{user:true});
 });
 
 
