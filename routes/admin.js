@@ -1,7 +1,10 @@
 var express = require('express');
 var router = express.Router();
+
+const multer=require('multer')
 require('./login')
-const Product = require('../helpers/signup-helpers');
+const Product = require('../helpers/product-helpers');
+
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -14,14 +17,15 @@ router.get('/add-product',function(req,res){
 
 router.post('/add-product', async (req, res) => {
     try {
-      const { name, category, price, image } = req.body;
+      
   
       // Create a new product instance
       const newProduct = new Product({
-        name,
-        category,
-        price,
-        image,
+        name:req.body.name,
+        category:req.body.category,
+        price:req.body.price,
+       
+        
       });
   
       // Save the new product to the database
