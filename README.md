@@ -9,7 +9,7 @@ Phone Peak Store is an innovative eCommerce platform dedicated to enhancing your
 ## Team Id
 phazor
 ## Link to product walkthrough
-[link to video]
+<a href="https://drive.google.com/file/d/1sdNQzWn2ok-MWlylWkUpuhjIZ8zXnRak/view?usp=drivesdk" >walkthrough video </a>
 ## How it Works ?
 1. Explaining the working of project <br>
 2. Embed video of project demo
